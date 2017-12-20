@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+h4{
+    
+    text-align: center;
+    font-size: 30px;
+}
+#background{
+    background-color: rgb(189, 34, 34);
+    margin: auto;
+   
+}
+
+#wraper{
+    
+    margin: 0 auto;
+    width: 70vw;
+    height: 960px;
+}
+
+.box{
+    display: block;
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    border: 15px solid yellow;
+    background-color: rgb(30, 30, 211);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Local Evenings</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="heading">
+            <h1 id="logo">LOCAL EVENINGS</h1>
+            <h4>Finding a place out</h4>
+        </div>
+        <div class="nav">
+            <ul class="nav-grid">
+                <li>
+                    <button type="" class="navb">
+                        <a href="./index.html">Home</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="" class="navb">
+                        <a href="#news">News</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="" class="navb">
+                        <a href="./contact.html">Contact</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="" class="navb">
+                        <a href="./about.html">About</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="body moving">
+            <div class="display-container button-grid">
+                <img class="mySlides" src="./img/yutacar-28290.jpg">
+                <img class="mySlides" src="./img/andreas-ronningen-29698.jpg">
+                <img class="mySlides" src="./img/ian-schneider-108618.jpg">
+                <img class="mySlides" src="./img/anthony-delanoix-15928.jpg">
+
+                <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <div class="center centerBox">
+                <input type="text" name="events" value="Restraunts, Clubs ...etc">
+                <button id= "submit" type="search">Search</button>
+            </div>
+        </div>
+        <div class="footer">
+            <img id = "facebook" src="./img/if_Facebook_571114.png" alt="">
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
