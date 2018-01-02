@@ -108,7 +108,7 @@ h4{
     display: grid;
     grid-template-areas: 
     "l1 . r1";
-    grid-template-columns: 1fr 500px 1fr;
+    /* grid-template-columns: 1fr 500px 1fr; */
 }
 #submit{
     padding: 12px;
