@@ -7,6 +7,10 @@
     overflow: scroll;
     list-style-type: none;
     padding-left: 10px;
+    background-color: antiquewhite;
+}
+input{
+    width: 100%;
 }
 .view{
     height: 85vh;
@@ -23,8 +27,8 @@ a{
 .head{
     text-align: center;
     margin: 0px;
-    background-color: antiquewhite;
-    height: 
+    background-color: skyblue;
+    height: 60px;
 }
 .s-bitcoin {
     height: 16px;
