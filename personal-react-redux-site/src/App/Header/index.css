@@ -1,13 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 .nav{
     display: grid;
-    
+    overflow: scroll;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.view{
+    height: 85vh;
+    overflow: scroll;
 }
 a{
-    display: flex;
+    display: grid;
     text-decoration: none;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
+    grid-template-columns: 20px 1fr
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* align-content: flex-start; */
+}
+.head{
+    text-align: center;
+    margin: 0px;
+    background-color: antiquewhite;
+    height: 
 }
 .s-bitcoin {
     height: 16px;
