@@ -4,6 +4,7 @@
 }   
 .foot{
     display: grid;
+    height: 35px;
     background-color: skyblue;
     grid-template-columns: 1fr 1fr 1fr
 }

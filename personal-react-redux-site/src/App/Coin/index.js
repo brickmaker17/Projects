@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { getCoins } from "../../redux/coins";
 import Chart from 'chart.js';
+import "./index.css";
 // import index from 'redux-thunk';
 
 
@@ -24,9 +25,9 @@ class Coin extends Component {
         let currentCoin = coins.filter(coin => coin.id === id)[0] || { name: "", prices: [], rank: "" };
         return (
             <div>
-                <h1>{currentCoin.name}</h1>
-                <h2>Rank #{currentCoin.rank}</h2>
-                <p>Prices ${currentCoin.prices}</p>
+                <h1 className="body-head">{currentCoin.name}</h1>
+                <h2 className="body-sub">Rank #{currentCoin.rank}</h2>
+                <p className="body-price">Prices ${currentCoin.prices}</p>
             </div>
         )
     }
