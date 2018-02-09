@@ -6,7 +6,7 @@ const locationSchema = new Schema({
     hours: String,
     location: String,
     description: String,
-    image: {type: Buffer, contentType: String}
+    image: {type: String}
 });
 
 module.exports = mongoose.model('location', locationSchema)

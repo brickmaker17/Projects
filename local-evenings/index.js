@@ -76,5 +76,5 @@ app.use('/locations', listRouter);
 
 
 app.listen(9090, () => {
-    console.log('Connected to port')
+    console.log('Connected to 9090')
 })

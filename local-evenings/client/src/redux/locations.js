@@ -6,7 +6,7 @@ const locationsReducer = (locations = { data: [], loading: true }, action) => {
     switch (action.type) {
         case 'ADD_LOCATION':
             return {
-                data: [...locations.data, action.location],
+                data: [...locations.data, action.data],
                 loading: false
             }
         case 'EDIT_LOCATION':
@@ -27,18 +27,25 @@ const locationsReducer = (locations = { data: [], loading: true }, action) => {
                     return i !== action.index;
                 })
             }
+        case 'GET_LOCATIONS':
+            return {
+                data: action.data,
+                loading: false
+            }
         default:
             return locations;
     }
 }
 
 export const addLocation = (location) => {
-    return function (dispatch) {
+    return dispatch => {
         axios.post(locationUrl, location)
             .then(response => {
+                let {data} = response
+                console.log(data)
                 dispatch({
                     type: 'ADD_LOCATION',
-                    location
+                    data
                 })
             })
             .catch(err => {
@@ -46,6 +53,18 @@ export const addLocation = (location) => {
             })
     }
 
+}
+export const getLocations = () => {
+    return dispatch => {
+        axios.get(locationUrl)
+            .then(response => {
+                let {data} = response
+                dispatch({
+                    type: 'GET_LOCATIONS',
+                    data
+                })
+            })
+    }
 }
 export const editLocation = (updatedLocation, id) => {
     return function (dispatch) {
