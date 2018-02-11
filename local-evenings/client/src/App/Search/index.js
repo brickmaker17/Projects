@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
     height: 100vh;
 `;
@@ -17,6 +18,11 @@ const StyledForm = styled.form`
     
 
 `;
+const StyledInput = styled.input`
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+`;
 
 class Search extends Component {
     constructor() {
@@ -27,7 +33,6 @@ class Search extends Component {
             }
         }
     }
-    //write handle change here
     handleSearch = (e) => {
         let { value } = e.target;
         this.setState({
@@ -42,11 +47,11 @@ class Search extends Component {
         return (
             <Wrapper>
                 <StyledForm>
-                    <input 
+                    <StyledInput 
                         value={search} 
                         name="search" 
                         type="text" 
-                        placeholder="Search Event name or description" 
+                        placeholder="Search Event name or description..." 
                         onChange={this.handleSearch} 
                     />
                 </StyledForm>
