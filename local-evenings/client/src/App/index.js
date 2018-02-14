@@ -5,11 +5,11 @@ import Nav from '../Nav';
 import About from '../App/About';
 import Search from './Search';
 import styled from 'styled-components';
-import backImage from './upload/anthony-delanoix-15928.jpg'
+import backImage from './Upload/anthony-delanoix-15928.jpg';
 import './styles/App.css'
 
 const Wrapper = styled.section`
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-image: url(${backImage});
     background-repeat: no-repeat;

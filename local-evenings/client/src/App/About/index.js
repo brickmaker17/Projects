@@ -20,6 +20,45 @@ const Box = styled.div`
     padding-top: 60px;
     padding-left: 30px;
     padding-right: 30px;
+    @media only screen and (max-width: 414px){
+        border: black solid 1px;
+        border-radius: 5px;
+        opacity: 0.8;
+        margin: auto;
+        justify-content: center;
+        height: 60vh;
+        width: 80%;
+        background-color: white;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media only screen and (max-width: 412px){
+        border: black solid 1px;
+        border-radius: 5px;
+        opacity: 0.8;
+        margin: auto;
+        justify-content: center;
+        height: 70vh;
+        width: 80%;
+        background-color: white;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media only screen and (max-width: 360px){
+        border: black solid 1px;
+        border-radius: 5px;
+        opacity: 0.8;
+        margin: auto;
+        justify-content: center;
+        height: 60vh;
+        width: 80%;
+        background-color: white;
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 `;
 
 function About(props) {

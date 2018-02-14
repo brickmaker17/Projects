@@ -33,11 +33,21 @@ background-color: white;
         height: 30vh;
         width: 80%;
         background-color: white;
-
     }
+    
 `;
 const Title = styled.h1`
     font-size: 100px;
+    @media only screen and (max-width: 414px){
+        font-size: 64px;
+    }
+    @media only screen and (max-width: 375px){
+        font-size: 64px;
+    }
+    @media only screen and (max-width: 360px){
+        font-size: 64px;
+        
+    }
 `;
 
 const Wrapper1 = styled.div`
@@ -50,8 +60,11 @@ const Wrapper1 = styled.div`
 
 
 class List extends Component {
-    componentWillReceiveProps() {
-        this.props.getLocations()
+    componentWillReceiveProps(nextProps) {
+        console.log(nextProps);
+        if (this.props.search !== nextProps.search) {
+            this.props.getLocations()
+        }
     }
 
     // componentDidMount() {
