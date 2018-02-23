@@ -11,7 +11,7 @@ let issue = require('./model/issues');
 
 app.use(bodyParser.json());
 app.use('/issues', issuesRoutes);
-app.use('comments', commentsRoutes);
+app.use('/comments', commentsRoutes);
 
 mongoose.connect('mongodb://localhost:27017', () => {
     console.log('Connected to Mongo');

@@ -4,7 +4,7 @@ const issuesModel = require('../model/issues');
 
 issuesRouter.route("/")
     .post((req,res)=>{
-        let newIssue= new issuesModel(req.body);
+        let newIssue = new issuesModel(req.body);
         newIssue.save((err, savedIssue)=>{
             if (err){
                 console.error(err);
