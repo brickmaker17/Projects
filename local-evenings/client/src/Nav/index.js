@@ -14,7 +14,7 @@ const Wrapper = styled.section`
 `;
 const StyledLink = styled(Link)`
     color: black;
-    &:hover {
+    :hover {
         border-radius: 5px;
         background-color: #555;
         color: white;

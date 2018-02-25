@@ -3,20 +3,35 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const SNav = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    background-color: grey;
-    height: 100%;
-    width: 100%;
-`;
+    background: gray;
+    height: 60px;
+    width: 100vw;
+`
+const StyledLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+    justify-self: center;
+    align-items: center;
+    :hover {
+        border-radius: 5px;
+        background-color: #555;
+        color: white;
+    }
+`   
+
+
+
 
 function Nav(props) {
     return (
         <SNav>
-            <h1>Hi</h1>
-            <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <StyledLink to='/'>Home</StyledLink>
+            <StyledLink to='/about'>About</StyledLink>
+            <StyledLink to='/contact'>Contact</StyledLink>
         </SNav>
     )
 }

@@ -6,6 +6,7 @@ function About(props){
     return(
         <div>
             <h1>About Me</h1>
+            <img src="" alt="Pic of me"/>
         </div>
     )
 }
